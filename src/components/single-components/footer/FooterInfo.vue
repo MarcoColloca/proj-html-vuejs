@@ -78,6 +78,7 @@
     @use '../../../assets/style/partials/variables.scss' as *;
 
     .footer__info{
+        padding: 100px 0;
         font-size: 12px;
         color: $app-darkgray;
 

@@ -83,7 +83,7 @@
 
 
 <template>
-    <div>
+    <footer>
         <!-- Footer Info Section -->
         <FooterInfo
          :address="footerAddress"
@@ -93,12 +93,14 @@
         ></FooterInfo>
 
         <FooterCopyright></FooterCopyright>
-    </div>
+    </footer>
 </template>
 
 
 
 
 <style lang="scss" scoped>
-
+    footer{
+        position: relative;
+    }
 </style>
