@@ -1,11 +1,11 @@
 @use './variables' as *;
 
 .container{
-    max-width: 1240px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.container-lg{
+.container-sm{
     max-width: 1510px;
     margin: 0 auto;
 }
@@ -17,4 +17,12 @@
 
 .col-4{
     width: calc(100%/12*4);
+}
+
+.col-3{
+    width: calc(100%/12*3);
+}
+
+.col-6{
+    width: calc(100%/12*6);
 }
