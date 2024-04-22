@@ -2,7 +2,12 @@
     export default {
         data(){
             return{
-
+                timerTime: {
+                    days: '00',
+                    hours: '00',
+                    minutes: '00',
+                    seconds: '00'
+                },
             }
         }
     }
@@ -16,7 +21,10 @@
         <!-- Header Ticket Section -->
         <div class="header__ticket">
             <p>Starts TOMORROW! Our biggest event of the year...</p>
-            <div class="header__ticket__timer"><span><font-awesome-icon :icon="['far', 'clock']" /></span> 00:00:00:00</div>
+            <div class="header__ticket__timer">
+                <span class="header__ticket__timer--icon"> <font-awesome-icon :icon="['far', 'clock']"/> </span>  
+                <span class="header__ticket__timer--time"> {{timerTime.days}} : {{timerTime.hours}} : {{timerTime.minutes}} : {{timerTime.seconds}} </span>
+            </div>
             <button>Get Ticket</button>
         </div>
 
@@ -43,12 +51,17 @@
         background-color: $app-lightgray;
         padding: 20px 0;
         .header__ticket__timer{
+            font-size: 18px;
             font-weight: bold;
-            color: #3F3A64
+            color: #3F3A64;
+            .header__ticket__timer--icon{
+                margin-right: 10px
+            }
         }
         
         button{
             @include btn-artist;
+            padding: 8px 40px;
         }
     }
 </style>
