@@ -27,8 +27,8 @@
 
 
 <style lang="scss" scoped>
-    @use '../../assets/style/partials/variables.scss' as *;
-    @use '../../assets/style/partials/mixins.scss' as *;
+    @use '../../../assets/style/partials/variables.scss' as *;
+    @use '../../../assets/style/partials/mixins.scss' as *;
 
 
     /* Ticket Section*/

@@ -1,5 +1,5 @@
 <script>
-    import SocialIcons from './SocialIcons.vue';
+    import SocialIcons from '../general/SocialIcons.vue';
 
 
     export default {
@@ -56,8 +56,8 @@
 
 <style lang="scss" scoped>
 
-    @use '../../assets/style/partials/variables.scss' as *;
-    @use '../../assets/style/partials/mixins.scss' as *;
+    @use '../../../assets/style/partials/variables.scss' as *;
+    @use '../../../assets/style/partials/mixins.scss' as *;
 
 
     /* Navbar Section */

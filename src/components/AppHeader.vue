@@ -1,6 +1,6 @@
 <script>
-    import AppTicket from './single-components/AppTicket.vue';
-    import AppNavbar from './single-components/AppNavbar.vue'
+    import AppTicket from './single-components/header/AppTicket.vue';
+    import AppNavbar from './single-components/header/AppNavbar.vue'
 
     export default {
         components:{            
@@ -65,9 +65,5 @@
 
 
 <style lang="scss" scoped>
-    @use '../assets/style/partials/variables.scss' as *;
-    @use '../assets/style/partials/mixins.scss' as *;
-
-
 
 </style>
