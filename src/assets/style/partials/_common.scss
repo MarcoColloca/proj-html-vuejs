@@ -1,5 +1,9 @@
 @use './variables' as *;
+@use './mixins'as *;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Petit+Formal+Script&family=Playball&display=swap');
+
 
 body{
     background-color: $app-white;
@@ -7,3 +11,9 @@ body{
     font-family: "Inter", sans-serif;
 }
 
+
+.artist-sign{
+    color: $app-lightblue;
+    font-family: "Playball";
+    font-size: 32px;
+}
