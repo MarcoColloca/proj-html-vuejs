@@ -16,7 +16,7 @@
         <!-- Header Ticket Section -->
         <div class="header__ticket">
             <p>Starts TOMORROW! Our biggest event of the year...</p>
-            <div class="header__ticket__timer"><span>☻</span> 00:00:00:00</div>
+            <div class="header__ticket__timer"><span><font-awesome-icon :icon="['far', 'clock']" /></span> 00:00:00:00</div>
             <button>Get Ticket</button>
         </div>
 
