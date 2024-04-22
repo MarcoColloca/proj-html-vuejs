@@ -15,7 +15,28 @@
                     seconds: '00'
                 },
                 logoSrc: '../../public/imgs/dark-logo.png',
-                navbarTabs:['Home', 'Pages', 'Courses', 'Blog', 'Shop'],
+                navbarTabs:[
+                    {
+                        name: 'Home',
+                        href: '#'
+                    },
+                    {
+                        name: 'Pages',
+                        href: '#'
+                    },
+                    {
+                        name: 'Courses',
+                        href: '#'
+                    },
+                    {
+                        name: 'Blog',
+                        href: '#'
+                    },
+                    {
+                        name: 'Shop',
+                        href: '#'
+                    }
+                ],
             }
         }
     }
@@ -49,8 +70,8 @@
                     <div class="col-6">                        
                         <ul class="header__navbar__tabs">
                             <li v-for="tab in navbarTabs">
-                                <a href="">
-                                    {{ tab }} <font-awesome-icon :icon="['fas', 'chevron-down']" class="header__navbar__tabs__icon"/>
+                                <a :href="tab.href">
+                                    {{ tab.name }} <font-awesome-icon :icon="['fas', 'chevron-down']" class="header__navbar__tabs__icon"/>
                                 </a> 
                             </li>
                         </ul>                            
@@ -101,7 +122,6 @@
     /* Navbar Section */
     .header__navbar{
         padding: 30px 0;
-        border: 1px solid coral;
         
         .row{
             justify-content: space-between;
