@@ -11,13 +11,16 @@
 
 
 <template>
+    <!-- Page Header -->
     <header>
+        <!-- Header Ticket Section -->
         <div class="header__ticket">
             <p>Starts TOMORROW! Our biggest event of the year...</p>
             <div class="header__ticket__timer"><span>☻</span> 00:00:00:00</div>
             <button>Get Ticket</button>
         </div>
 
+        <!-- Header Navbar Section -->
         <div class="header__navbar">
             <div class="header__navbar__logo">Logo img</div>
             <div class="header__navbar__tabs"><ul><li>tab</li></ul></div>
