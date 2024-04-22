@@ -1,0 +1,11 @@
+@use './variables' as *;
+
+@mixin btn-artist{
+    border-radius: 8px;
+    background-color: #FDF0EA;
+    color: $app-orange;
+    &:hover{
+        background-color: $app-orange;
+        color: $app-white;
+    }
+}
