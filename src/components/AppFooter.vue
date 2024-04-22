@@ -84,6 +84,7 @@
 
 <template>
     <div>
+        <!-- Footer Info Section -->
         <FooterInfo
          :address="footerAddress"
          :explore="footerExplore"

@@ -26,6 +26,7 @@
     <div class="footer__info">
         <div class="container">
             <div class="row">
+                <!-- Footer Info Address -->
                 <div class="col">
                     <ul class="footer__info--address">
                         <h2>{{ address.title }}</h2>
@@ -36,6 +37,7 @@
                     <SocialIcons></SocialIcons>
                 </div>
 
+                <!-- Footer Info Explore -->
                 <div class="col-2">
                     <h2>{{ explore.title }}</h2>
                     <ul class="footer__info--explore">
@@ -45,6 +47,7 @@
                     </ul>
                 </div>
 
+                <!-- Footer Info Informations -->
                 <div class="col-2">
                     <h2>{{ informations.title }}</h2>
                     <ul class="footer__info--information">
@@ -54,6 +57,7 @@
                     </ul>
                 </div>
 
+                <!-- Footer Info Instagram -->
                 <div class="col">
                     <h2 >{{ instagram.title }} <span class="sub-title"> &commat;maxcoach</span> </h2> 
                     <ul class="footer__info--instagram">
