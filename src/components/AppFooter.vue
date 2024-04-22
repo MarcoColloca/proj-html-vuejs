@@ -1,5 +1,13 @@
 <script>
+    import FooterInfo from './single-components/footer/FooterInfo.vue'
+    import FooterCopyright from './single-components/footer/FooterCopyright.vue'
+
     export default {
+        components:{
+            FooterInfo,
+            FooterCopyright
+        },
+
         data(){            
             return {
                 
@@ -15,7 +23,9 @@
 
 <template>
     <div>
-        <h1>test</h1>
+        <FooterInfo></FooterInfo>
+
+        <FooterCopyright></FooterCopyright>
     </div>
 </template>
 
