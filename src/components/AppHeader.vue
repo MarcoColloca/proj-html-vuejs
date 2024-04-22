@@ -56,7 +56,7 @@
                         </ul>                            
                     </div>
     
-                    <div class="col-3 text-end">
+                    <div class="col-3">
                        <SocialIcons></SocialIcons>                    
                     </div>    
                 </div>
