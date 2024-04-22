@@ -1,6 +1,11 @@
 <script>
+    import SocialIcons from './single-components/SocialIcons.vue';
 
     export default {
+        components:{
+            SocialIcons,
+        },
+
         data(){
             return{
                 timerTime: {
@@ -52,7 +57,7 @@
                     </div>
     
                     <div class="col-3 text-end">
-                        componente social icons                       
+                       <SocialIcons></SocialIcons>                    
                     </div>    
                 </div>
             </div>
