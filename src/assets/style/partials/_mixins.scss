@@ -4,6 +4,9 @@
     border-radius: 8px;
     background-color: #FDF0EA;
     color: $app-orange;
+    font-weight: bold;
+    border: none;
+    padding: 10px 30px;
     &:hover{
         background-color: $app-orange;
         color: $app-white;

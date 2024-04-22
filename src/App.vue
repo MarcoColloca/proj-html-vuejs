@@ -18,9 +18,6 @@
 
 
 <template>
-  <h1>
-    {{ test }}
-  </h1>
   <AppHeader></AppHeader>
 </template>
 

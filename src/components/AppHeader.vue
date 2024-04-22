@@ -13,8 +13,8 @@
 <template>
     <header>
         <div class="header__ticket">
-            <p>Lorem ipsum dolor sit.</p>
-            <div class="header__ticket__timer">icona 00:00:00:00</div>
+            <p>Starts TOMORROW! Our biggest event of the year...</p>
+            <div class="header__ticket__timer"><span>☻</span> 00:00:00:00</div>
             <button>Get Ticket</button>
         </div>
 
@@ -30,6 +30,22 @@
 
 <style lang="scss" scoped>
     @use '../assets/style/partials/variables.scss' as *;
+    @use '../assets/style/partials/mixins.scss' as *;
 
-
+    .header__ticket{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background-color: $app-lightgray;
+        padding: 20px 0;
+        .header__ticket__timer{
+            font-weight: bold;
+            color: #3F3A64
+        }
+        
+        button{
+            @include btn-artist;
+        }
+    }
 </style>
