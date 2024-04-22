@@ -16,7 +16,7 @@
                     minutes: '00',
                     seconds: '00'
                 },
-                logoSrc: '../../public/imgs/dark-logo.png',
+                logoSrc: '/imgs/dark-logo.png',
                 navbarTabs:[
                     {
                         name: 'Home',
