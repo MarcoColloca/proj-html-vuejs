@@ -83,6 +83,7 @@
 
 
 <template>
+    <!-- Page Footer -->
     <footer>
         <!-- Footer Info Section -->
         <FooterInfo
@@ -92,6 +93,7 @@
          :instagram="footerInstagram"
         ></FooterInfo>
 
+        <!-- Footer Copyright Section -->
         <FooterCopyright></FooterCopyright>
     </footer>
 </template>
