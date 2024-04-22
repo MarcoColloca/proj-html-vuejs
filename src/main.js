@@ -10,7 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // Icone Regular Font Awesome
 import { 
     faClock as faClockSolid,
-    faChevronDown as faChevronDownSolid
+    faChevronDown as faChevronDownSolid,
+    faArrowUpLong as faArrowUpLongSolid,
 } from '@fortawesome/free-solid-svg-icons'
 
 // Icone Solid Font Awesome
@@ -23,10 +24,10 @@ import{
     faTwitter,
     faFacebookF,
     faInstagram,
-    faLinkedin
+    faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faClockSolid, faClockRegular, faChevronDownSolid, faTwitter, faFacebookF, faInstagram, faLinkedin)
+library.add(faClockSolid, faClockRegular, faChevronDownSolid, faTwitter, faFacebookF, faInstagram, faLinkedin, faArrowUpLongSolid)
 
 const app = createApp(App)
 
