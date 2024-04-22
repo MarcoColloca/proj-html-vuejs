@@ -1,11 +1,11 @@
 <script>
-    import AppTicket from './single-components/header/AppTicket.vue';
-    import AppNavbar from './single-components/header/AppNavbar.vue'
+    import HeaderTicket from './single-components/header/HeaderTicket.vue';
+    import HeaderNavbar from './single-components/header/HeaderNavbar.vue'
 
     export default {
         components:{            
-            AppTicket,
-            AppNavbar,
+            HeaderTicket,
+            HeaderNavbar,
         },
 
         data(){
@@ -50,15 +50,15 @@
     <!-- Page Header -->
     <header>
         <!-- Header Ticket Section -->
-        <AppTicket
+        <HeaderTicket
          :timer="timerTime"
-        ></AppTicket>
+        ></HeaderTicket>
 
         <!-- Header Navbar Section -->
-        <AppNavbar
+        <HeaderNavbar
          :logo="logoSrc"
          :tabs="navbarTabs"
-        ></AppNavbar>
+        ></HeaderNavbar>
     </header>
 </template>
 
