@@ -15,11 +15,18 @@ import {
 
 // Icone Solid Font Awesome
 import { 
-    faClock as faClockRegular, 
-    
+    faClock as faClockRegular,    
 } from '@fortawesome/free-regular-svg-icons'
 
-library.add(faClockSolid, faClockRegular, faChevronDownSolid)
+// Icone Brands Font Awesome
+import{
+    faTwitter,
+    faFacebookF,
+    faInstagram,
+    faLinkedin
+} from '@fortawesome/free-brands-svg-icons'
+
+library.add(faClockSolid, faClockRegular, faChevronDownSolid, faTwitter, faFacebookF, faInstagram, faLinkedin)
 
 const app = createApp(App)
 
