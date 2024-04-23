@@ -95,6 +95,13 @@
         <div class="main__artist--blog__link">
             <p>Get into details now? </p><a href="#"> View all posts <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></a>
         </div>
+
+
+        <!-- Blog background images -->
+        <img class="artist--blog__img-circle" src="/imgs/artist-shape-06.png" alt="">
+        <img class="artist--blog__img-matrix" src="/imgs/maxcoach-shape-05.png" alt="">
+        <img class="artist--blog__img-string" src="/imgs/maxcoach-shape-14-1536x343.png" alt="">
+        <img class="artist--blog__img-stain" src="/imgs/artist-shape-00.png" alt="">
     </section>
 </template>
 
@@ -107,8 +114,48 @@
 
 
     .main__artist--blog{
+        position: relative;
+        z-index: -2;
         background-color: $app-lightgray;
         padding: 50px 0;
+
+
+        .artist--blog__img-circle{
+            position: absolute;
+            left: 250px;
+            top: 200px;
+            width: 110px;
+            z-index: -1;
+        }
+
+        .artist--blog__img-matrix{
+            position: absolute;
+            left: 725px;
+            top: 196px;
+            z-index: -1;
+        }
+
+        .artist--blog__img-string{
+            position: absolute;
+            left: 4px;
+            top: 256px;
+             transform: rotate(-6deg);
+            z-index: -1;
+            width: 100%;
+            filter: brightness(63%) sepia(100%);
+        }
+
+        .artist--blog__img-stain{
+            position: absolute;
+            left: 1037px;
+            top: 659px;
+            width: 180px;
+            z-index: -1;
+        }
+
+
+
+
         .main__artist--blog__title{
             padding: 40px 0;
             text-align: center;
@@ -117,6 +164,8 @@
 
 
         .main__artist--blog__cards{
+            position: relative;
+            z-index: 99;
             .main__artist--blog__card{
                 background-color: $app-white;
 
@@ -192,9 +241,7 @@
                 }
             }
         }
-
-
-
+        
         .main__artist--blog__link{
             padding: 50px 0;
             text-align: center;
