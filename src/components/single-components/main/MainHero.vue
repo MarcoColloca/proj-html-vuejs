@@ -5,15 +5,17 @@
 </script>
 
 <template>
-    <!-- Hero Section -->
+    <!-- Hero Section -->    
     <div class="main__hero">
         <div class="row">
             <div class="col-4">
+                <!-- Il numero nelle classi delle immagini, indica lo z-index, quindi la loro posizione seguendo l'asse z. -->
                 <div class="main__hero__box--left">
-                    <img class="hero-img-1" src="/imgs/artist-hero-image-01.jpg" alt="">
-                    <img class="hero-img-2" src="/imgs/artist-hero-image-02.jpg" alt="">
-                    <img class="hero-img-3" src="/imgs/artist-hero-image-03.png" alt="">
-                    <img class="hero-img-4" src="/imgs/artist-shape-00.png" alt="">
+                    <img class="hero__box--left-img-1" src="/imgs/artist-shape-00.png" alt="">
+                    <img class="hero__box--left-img-2" src="/imgs/artist-hero-image-03.png" alt="">
+                    <img class="hero__box--left-img-3" src="/imgs/artist-shape-03.png" alt="">
+                    <img class="hero__box--left-img-4" src="/imgs/artist-hero-image-02.jpg" alt="">
+                    <img class="hero__box--left-img-5" src="/imgs/artist-hero-image-01.jpg" alt="">
                 </div>
             </div>
     
@@ -24,10 +26,16 @@
                     <button>Get started today</button>
                 </div>
             </div>
-    
+            
             <div class="col-4">
+                <!-- Il numero nelle classi delle immagini, indica lo z-index, quindi la loro posizione seguendo l'asse z. -->
                 <div class="main__hero__box--right">
-                    
+                    <img class="hero__box--right-img-1" src="/imgs/artist-shape-01.png" alt="">
+                    <img class="hero__box--right-img-2" src="/imgs/artist-shape-05.png" alt="">
+                    <img class="hero__box--right-img-3" src="/imgs/artist-shape-04.png" alt="">
+                    <img class="hero__box--right-img-4" src="/imgs/maxcoach-shape-12.png" alt="">
+                    <img class="hero__box--right-img-5" src="/imgs/artist-shape-00.png" alt="">
+                    <img class="hero__box--right-img-6" src="/imgs/artist-hero-image-04.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -85,29 +93,82 @@
             position: absolute;
         }
 
-        .hero-img-1{
-            z-index: 4;
-            left: 205px;
-            bottom: 55px;
+        .main__hero__box--left{
+
+            .hero__box--left-img-1{
+                z-index: 1;
+                left: -50px;
+                bottom: 15px;
+                width: 560px;
+            }
+    
+            .hero__box--left-img-2{
+                z-index: 2;
+                left: 550px;
+                bottom: 30px;
+            }
+    
+            .hero__box--left-img-3{
+                z-index: 3;
+                left: 41px;
+                bottom: 100px;
+                width: 350px;
+            }
+    
+            .hero__box--left-img-4{
+                z-index: 4;
+                left: 385px;
+                bottom: 267px;;
+            }
+    
+            .hero__box--left-img-5{
+                z-index: 5;
+                left: 198px;
+                bottom: 45px;
+
+            }
         }
 
-        .hero-img-2{
-            z-index: 3;
-            right: 5px;
-            top: 80px;
-        }
+        .main__hero__box--right{
+            .hero__box--right-img-1{
+                z-index: 1;
+                bottom: 60px;
+                right: 151px;
+            }
 
-        .hero-img-3{
-            z-index: 2;
-            right: -85px;
-            bottom: 30px;
-        }
+            .hero__box--right-img-2{
+                z-index: 2;
+                bottom: 0;
+                right: 120px;
+                width: 365px;
+            }
 
-        .hero-img-4{
-            z-index: 1;
-            left: -50px;
-            bottom: 15px;
-            width: 560px;
+            .hero__box--right-img-3{
+                z-index: 3;
+                bottom: 343px;
+                right: 155px;
+            }
+
+            .hero__box--right-img-4{
+                z-index: 4;
+                bottom: 35px;
+                right: 410px;
+            }
+
+            .hero__box--right-img-5{
+                z-index: 5;
+                bottom: 60px;
+                right: 454px;
+                width: 150px;
+                filter: invert(0%) sepia(0%) saturate(2989%) hue-rotate(210deg) brightness(113%) contrast(102%);
+            }
+
+            .hero__box--right-img-6{
+                z-index: 6;
+                bottom: 52px;
+                right: 237px;
+            }
+
         }
     }
 
