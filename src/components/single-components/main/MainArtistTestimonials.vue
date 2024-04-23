@@ -7,6 +7,7 @@
 
 
 <template>
+    <!-- Mid-Section Wave container -->
     <div class="wave-container">
         <img class="artist--video-img-0" src="/imgs/artist-wave.svg" alt="">
     </div>
