@@ -50,7 +50,7 @@
 
 
     .main__hero{
-        
+        overflow: hidden;
         background-color:  #FAF4EE;
         height: 717px;
 
