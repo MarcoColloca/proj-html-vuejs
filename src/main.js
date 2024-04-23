@@ -12,6 +12,7 @@ import {
     faClock as faClockSolid,
     faChevronDown as faChevronDownSolid,
     faArrowUpLong as faArrowUpLongSolid,
+    faArrowRightLong as faArrowRightLongSolid,
     faCircle as faCircleSolid,
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -28,7 +29,7 @@ import{
     faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faClockSolid, faClockRegular, faChevronDownSolid, faTwitter, faFacebookF, faInstagram, faLinkedin, faArrowUpLongSolid, faCircleSolid)
+library.add(faClockSolid, faClockRegular, faChevronDownSolid, faTwitter, faFacebookF, faInstagram, faLinkedin, faArrowUpLongSolid, faCircleSolid, faArrowRightLongSolid)
 
 const app = createApp(App)
 
