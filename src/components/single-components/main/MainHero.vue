@@ -11,11 +11,12 @@
             <div class="col-4">
                 <!-- Il numero nelle classi delle immagini, indica lo z-index, quindi la loro posizione seguendo l'asse z. -->
                 <div class="main__hero__box--left">
-                    <img class="hero__box--left-img-1" src="/imgs/artist-shape-00.png" alt="">
-                    <img class="hero__box--left-img-2" src="/imgs/artist-hero-image-03.png" alt="">
-                    <img class="hero__box--left-img-3" src="/imgs/artist-shape-03.png" alt="">
-                    <img class="hero__box--left-img-4" src="/imgs/artist-hero-image-02.jpg" alt="">
-                    <img class="hero__box--left-img-5" src="/imgs/artist-hero-image-01.jpg" alt="">
+                    <img class="hero__box--left-img-1" src="/imgs/artist-shape-02.png" alt="">
+                    <img class="hero__box--left-img-2" src="/imgs/artist-shape-00.png" alt="">
+                    <img class="hero__box--left-img-3" src="/imgs/artist-hero-image-03.png" alt="">
+                    <img class="hero__box--left-img-4" src="/imgs/artist-shape-03.png" alt="">
+                    <img class="hero__box--left-img-5" src="/imgs/artist-hero-image-02.jpg" alt="">
+                    <img class="hero__box--left-img-6" src="/imgs/artist-hero-image-01.jpg" alt="">
                 </div>
             </div>
     
@@ -97,32 +98,38 @@
 
             .hero__box--left-img-1{
                 z-index: 1;
+                left: 0;
+                bottom: auto;               
+            }
+
+            .hero__box--left-img-2{
+                z-index: 2;
                 left: -50px;
                 bottom: 15px;
                 width: 560px;
             }
     
-            .hero__box--left-img-2{
-                z-index: 2;
+            .hero__box--left-img-3{
+                z-index: 3;
                 left: 550px;
                 bottom: 30px;
             }
     
-            .hero__box--left-img-3{
-                z-index: 3;
+            .hero__box--left-img-4{
+                z-index: 4;
                 left: 41px;
                 bottom: 100px;
                 width: 350px;
             }
     
-            .hero__box--left-img-4{
-                z-index: 4;
+            .hero__box--left-img-5{
+                z-index: 5;
                 left: 385px;
                 bottom: 267px;;
             }
     
-            .hero__box--left-img-5{
-                z-index: 5;
+            .hero__box--left-img-6{
+                z-index: 6;
                 left: 198px;
                 bottom: 45px;
 
