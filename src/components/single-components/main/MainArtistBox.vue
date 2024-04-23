@@ -22,7 +22,7 @@
                     <div class="col-3">
                         <!-- 1° Card dell'Artist Box Cards -->
                         <div class="main__artist--box__card">
-                            <div class="main__artist--box__card__top">
+                            <div class="main__artist--box__card__header">
                                 <img src="/imgs/artist-box-image-01.png" alt="">
                             </div>
                             <div class="main__artist--box__card__body">
@@ -39,7 +39,7 @@
                     <div class="col-3">
                         <!-- 2° Card dell'Artist Box Cards -->
                         <div class="main__artist--box__card mt-4">
-                            <div class="main__artist--box__card__top">
+                            <div class="main__artist--box__card__header">
                                 <img src="/imgs/artist-box-image-02.png" alt="">
                             </div>
                             <div class="main__artist--box__card__body">
@@ -56,7 +56,7 @@
                     <div class="col-3">
                         <!-- 3° Card dell'Artist Box Cards -->
                         <div class="main__artist--box__card">
-                            <div class="main__artist--box__card__top">
+                            <div class="main__artist--box__card__header">
                                 <img src="/imgs/artist-box-image-03.png" alt="">
                             </div>
                             <div class="main__artist--box__card__body">
@@ -73,7 +73,7 @@
                     <div class="col-3">
                         <!-- 4° Card dell'Artist Box Cards -->
                         <div class="main__artist--box__card mt-4">
-                            <div class="main__artist--box__card__top">
+                            <div class="main__artist--box__card__header">
                                 <img src="/imgs/artist-box-image-04.png" alt="">
                             </div>
                             <div class="main__artist--box__card__body">
