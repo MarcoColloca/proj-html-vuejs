@@ -3,6 +3,10 @@
     import MainArtistBox from './single-components/main/MainArtistBox.vue'
 
     export default {
+        data(){
+            
+        },
+
         components:{
             MainHero,
             MainArtistBox,
