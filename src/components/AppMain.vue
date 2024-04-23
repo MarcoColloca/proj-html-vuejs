@@ -1,9 +1,11 @@
 <script>
     import MainHero from './single-components/main/MainHero.vue'
+    import MainArtistBox from './single-components/main/MainArtistBox.vue'
 
     export default {
         components:{
             MainHero,
+            MainArtistBox,
         }
     }
 </script>
@@ -14,6 +16,8 @@
     <!-- Page Main -->
     <main>
         <MainHero></MainHero>
+
+        <MainArtistBox></MainArtistBox>
     </main>
 </template>
 
