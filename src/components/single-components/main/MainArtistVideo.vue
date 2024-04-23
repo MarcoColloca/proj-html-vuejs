@@ -47,7 +47,7 @@
                     top: 43%;
                     left: 43%;
                 }        
-        
+                                
                 .artist--video-img-1{
                     position: absolute;
                     z-index: 1;

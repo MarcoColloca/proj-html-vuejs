@@ -7,6 +7,9 @@
 
 
 <template>
+    <div class="wave-container">
+        <img class="artist--video-img-0" src="/imgs/artist-wave.svg" alt="">
+    </div>
     <!-- Testimonials Section -->
     <div class="main__artist--testimonials">
         <!-- Testimonials Title -->
@@ -142,8 +145,21 @@
     @use '../../../assets/style/partials/variables.scss' as *;
     @use '../../../assets/style/partials/mixins.scss' as *;
 
-    
-    .main__artist--testimonials{
+    .wave-container{
+        position: relative;
+        .artist--video-img-0{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 300px;
+            opacity: 0.1;
+            filter: invert(91%) sepia(3%) saturate(111%) hue-rotate(351deg) brightness(80%) contrast(97%);
+            
+        }
+
+    }
+
+    .main__artist--testimonials{        
         background-color: #FAF8F6;
         
         .main__artist--testimonials__title{
@@ -206,6 +222,10 @@
                 }
             }
         }
+
+
+
+
     }
 
 
