@@ -292,15 +292,16 @@
             padding: 20px;
 
             .main__artist--courses__card--body{
-                padding: 0 20px;
+                width: 230px;
+                padding: 10px;
+                padding-left: 20px;
                 .card--body__price{
                     color: $app-orange;
                     font-weight: 600;
-                    margin: 20px 0;
                 }
 
                 .card--body__title{
-                    font-size: 15px;
+                    font-size: 14px;
                     margin-bottom: 20px;
                     h3{
                         font-weight: 500;
@@ -308,16 +309,25 @@
                 }
 
                 .card--body__details{
-                    font-size: 14px;
+                    font-size: 12px;
                     color: rgb(131, 131, 131);
                     span{
                         &:first-of-type{
                             margin-right: 20px;
                         }
                     }
-                }
+                }                
             }
-        }        
+
+            &:hover{
+                .main__artist--courses__card--body{
+                    border: 1px solid $app-orange;
+                    transform: translateY(-40px);
+                    z-index: 99;
+                    background-color: white;
+                }                        
+            }      
+        }
     }
 
 
