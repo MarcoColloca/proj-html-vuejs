@@ -44,7 +44,7 @@
                                 </div>
 
                                 <div class="card--body__place">
-                                    <p>☻ Texas, US</p>
+                                    <p><font-awesome-icon :icon="['fas', 'location-dot']" /> Texas, US</p>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                                 </div>
 
                                 <div class="card--body__place">
-                                    <p>☻ New York, US</p>
+                                    <p><font-awesome-icon :icon="['fas', 'location-dot']" /> New York, US</p>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +90,7 @@
                                 </div>
 
                                 <div class="card--body__place">
-                                    <p>☻ Hamburg, Germany</p>
+                                    <p><font-awesome-icon :icon="['fas', 'location-dot']" /> Hamburg, Germany</p>
                                 </div>
                             </div>
 
@@ -115,7 +115,7 @@
                                 </div>
 
                                 <div class="card--body__place">
-                                    <p>☻ Illinois, US</p>
+                                    <p><font-awesome-icon :icon="['fas', 'location-dot']" /> Illinois, US</p>
                                 </div>
                             </div>
 
