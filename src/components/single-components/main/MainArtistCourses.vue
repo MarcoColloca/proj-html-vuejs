@@ -295,6 +295,7 @@
                 width: 230px;
                 padding: 10px;
                 padding-left: 20px;
+                padding-right: 0;
                 .card--body__price{
                     color: $app-orange;
                     font-weight: 600;
@@ -323,6 +324,7 @@
                 .main__artist--courses__card--body{
                     border: 1px solid $app-orange;
                     transform: translateY(-40px);
+                    margin-bottom: -40px;
                     z-index: 99;
                     background-color: white;
                 }                        
