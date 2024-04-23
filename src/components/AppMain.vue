@@ -3,6 +3,7 @@
     import MainArtistBox from './single-components/main/MainArtistBox.vue'
     import MainArtistVideo from './single-components/main/MainArtistVideo.vue'
     import MainArtistTestimonials from './single-components/main/MainArtistTestimonials.vue'
+    import MainArtistNewsletter from './single-components/main/MainArtistNewsletter.vue'
 
     export default {
         data(){
@@ -14,6 +15,7 @@
             MainArtistBox,
             MainArtistVideo,
             MainArtistTestimonials,
+            MainArtistNewsletter,
         }
     }
 </script>
@@ -30,6 +32,8 @@
         <MainArtistVideo></MainArtistVideo>
 
         <MainArtistTestimonials></MainArtistTestimonials>
+
+        <MainArtistNewsletter></MainArtistNewsletter>
     </main>
 </template>
 
