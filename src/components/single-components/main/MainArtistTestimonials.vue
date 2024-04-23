@@ -12,7 +12,7 @@
         <img class="artist--video-img-0" src="/imgs/artist-wave.svg" alt="">
     </div>
     <!-- Testimonials Section -->
-    <div class="main__artist--testimonials">
+    <section class="main__artist--testimonials">
         <!-- Testimonials Title -->
         <div class="main__artist--testimonials__title">
             <p class="artist-sign">Testimonials</p>
@@ -137,7 +137,7 @@
             <font-awesome-icon :icon="['fas', 'circle']" class="main__artist--testimonials__scrollbar__circle"/>
             <font-awesome-icon :icon="['fas', 'circle']" class="main__artist--testimonials__scrollbar__circle"/>
         </div>
-    </div>
+    </section>
 </template>
 
 

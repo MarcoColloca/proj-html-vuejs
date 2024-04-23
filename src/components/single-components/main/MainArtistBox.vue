@@ -8,7 +8,7 @@
 
 <template>
     <!-- Artist Box Section -->
-    <div class="main__artist--box">
+    <section class="main__artist--box">
         <!-- Artist Box Title -->
         <div class="main__artist--box__title">
             <p class="artist-sign">Artist Coaching</p>
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 

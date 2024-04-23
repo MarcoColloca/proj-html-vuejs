@@ -12,7 +12,7 @@
 
 
 <template>
-    <div class="main__artist--newsletter">
+    <section class="main__artist--newsletter">
         <div class="container-sm">
             <div class="row">
                 <div class="col-4">
@@ -32,7 +32,7 @@
 
         <img class="artist--newsletter__img-left" src="/imgs/artist-shape-color-paint-top-left.png" alt="">
         <img class="artist--newsletter__img-right" src="/imgs/artist-shape-color-paint-bottom-right.png" alt="">
-    </div>
+    </section>
 </template>
 
 

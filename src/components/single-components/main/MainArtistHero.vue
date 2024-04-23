@@ -6,7 +6,7 @@
 
 <template>
     <!-- Hero Section -->    
-    <div class="main__hero">
+    <section class="main__hero">
         <div class="row">
             <div class="col-4">
                 <!-- Il numero nelle classi delle immagini, indica lo z-index, quindi la loro posizione seguendo l'asse z. -->
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 

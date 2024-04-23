@@ -8,7 +8,7 @@
 
 <template>
     <!-- Artist Video Section -->
-    <div class="main__artist--video">
+    <section class="main__artist--video">
         <div class="container-sm">
             <div class="row">
                 <div class="col-12">
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 
@@ -47,7 +47,7 @@
                     top: 43%;
                     left: 43%;
                 }        
-                                
+
                 .artist--video-img-1{
                     position: absolute;
                     z-index: 1;
