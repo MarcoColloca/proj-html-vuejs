@@ -14,6 +14,7 @@ import {
     faArrowUpLong as faArrowUpLongSolid,
     faArrowRightLong as faArrowRightLongSolid,
     faCircle as faCircleSolid,
+    faEye as faEyeSolid,
 } from '@fortawesome/free-solid-svg-icons'
 
 // Icone Solid Font Awesome
@@ -21,6 +22,7 @@ import {
     faClock as faClockRegular,    
     faUser as faUserRegular,
     faFileLines as faFileLinesRegular,
+    faCalendar as faCalendarRegular,
 } from '@fortawesome/free-regular-svg-icons'
 
 // Icone Brands Font Awesome
@@ -31,7 +33,7 @@ import{
     faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faClockSolid, faClockRegular, faChevronDownSolid, faTwitter, faFacebookF, faInstagram, faLinkedin, faArrowUpLongSolid, faCircleSolid, faArrowRightLongSolid, faUserRegular, faFileLinesRegular)
+library.add(faClockSolid, faClockRegular, faChevronDownSolid, faTwitter, faFacebookF, faInstagram, faLinkedin, faArrowUpLongSolid, faCircleSolid, faArrowRightLongSolid, faUserRegular, faFileLinesRegular, faEyeSolid, faCalendarRegular)
 
 const app = createApp(App)
 
