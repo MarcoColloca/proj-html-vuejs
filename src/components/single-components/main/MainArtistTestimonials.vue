@@ -11,7 +11,7 @@
     <div class="wave-container">
         <img class="artist--video-img-0" src="/imgs/artist-wave.svg" alt="">
     </div>
-    <!-- Testimonials Section -->
+    <!-- Artist Testimonials Section -->
     <section class="main__artist--testimonials">
         <!-- Testimonials Title -->
         <div class="main__artist--testimonials__title">

@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <!-- Hero Section -->    
+    <!-- Artist Hero Section -->    
     <section class="main__hero">
         <div class="row">
             <div class="col-4">
