@@ -12,15 +12,18 @@
 
 
 <template>
+    <!-- Artist Newsletter Section -->
     <section class="main__artist--newsletter">
         <div class="container-sm">
             <div class="row">
+                <!-- Newsletter Title -->
                 <div class="col-4">
                     <h1>
                         Newsletter to get in touch
                     </h1>
                 </div>
 
+                <!-- Newsletter Mail Input -->
                 <div class="col">
                     <div class="main__artist--newsletter__mailbox">
                         <input type="mail" placeholder="Your e-mail" v-model="userMail">
@@ -30,6 +33,7 @@
             </div>
         </div>
 
+        <!-- Newsletter images -->
         <img class="artist--newsletter__img-left" src="/imgs/artist-shape-color-paint-top-left.png" alt="">
         <img class="artist--newsletter__img-right" src="/imgs/artist-shape-color-paint-bottom-right.png" alt="">
     </section>

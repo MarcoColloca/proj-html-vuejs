@@ -14,10 +14,12 @@
             <p class="artist-sign">Articles and Tips</p>
             <h1>Latest From the Blog</h1>
         </div>
-
+        
+        <!-- Blog Cards -->
         <div class="main__artist--blog__cards">
             <div class="container-sm">
                 <div class="row">
+                    <!-- Blog Left Card -->
                     <div class="col-3">
                         <div class="main__artist--blog__card left">
                             <div class="main__artist--blog__card--header">
@@ -40,6 +42,7 @@
                         </div>
                     </div>
                     
+                    <!-- Blog Hero Card -->
                     <div class="col-6">
                         <div class="main__artist--blog__hero-card">
                             <div class="main__artist--blog__hero-card--body">
@@ -62,6 +65,7 @@
                         </div>
                     </div>
 
+                    <!-- Blog Right Card -->
                     <div class="col-3">
                         <div class="main__artist--blog__card right">
                             <div class="main__artist--blog__card--header">
@@ -87,7 +91,7 @@
             </div>
         </div>
 
-
+        <!-- Blog Link to blogs -->
         <div class="main__artist--blog__link">
             <p>Get into details now? </p><a href="#"> View all posts <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></a>
         </div>
