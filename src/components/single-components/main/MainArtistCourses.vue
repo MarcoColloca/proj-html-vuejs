@@ -246,7 +246,11 @@
         <!-- Artist Courses Button -->
         <div class="main__artist--courses__button">
             <button>View All Courses <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></button>
-        </div>        
+        </div>
+
+        <img class="artist--courses__img-left" src="/imgs/artist-shape-01.png" alt="">
+
+        <img class="artist--courses__img-right" src="/imgs/artist-shape-01.png" alt="">
     </section>
 </template>
 
@@ -262,6 +266,22 @@
         .main__artist--courses__title{
             text-align: center;
             margin-bottom: 30px;
+        }
+
+        .artist--courses__img-left{
+            position: absolute;
+            left: -250px;
+            bottom: 75px;
+            z-index: -2;
+        }
+
+        .artist--courses__img-right{
+            position: absolute;
+            right: -270px;
+            top: 126px;
+            transform: rotate(248deg);
+            z-index: -1;
+            filter: invert(1);
         }
     }
 
@@ -309,5 +329,5 @@
             @include btn-artist-light;
             padding: 15px 25px;
         }
-    }
+    }    
 </style>
