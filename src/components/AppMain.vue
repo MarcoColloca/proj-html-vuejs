@@ -1,5 +1,5 @@
 <script>
-    import MainHero from './single-components/main/MainHero.vue'
+    import MainArtistHero from './single-components/main/MainArtistHero.vue'
     import MainArtistBox from './single-components/main/MainArtistBox.vue'
     import MainArtistVideo from './single-components/main/MainArtistVideo.vue'
 
@@ -9,7 +9,7 @@
         },
 
         components:{
-            MainHero,
+            MainArtistHero,
             MainArtistBox,
             MainArtistVideo,
         }
@@ -21,7 +21,7 @@
 <template>
     <!-- Page Main -->
     <main>
-        <MainHero></MainHero>
+        <MainArtistHero></MainArtistHero>
 
         <MainArtistBox></MainArtistBox>
 
