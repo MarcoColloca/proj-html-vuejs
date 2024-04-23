@@ -6,6 +6,7 @@
     import MainArtistNewsletter from './single-components/main/MainArtistNewsletter.vue';
     import MainArtistCourses from './single-components/main/MainArtistCourses.vue';
     import MainArtistBlog from './single-components/main/MainArtistBlog.vue';
+    import MainArtistEvents from './single-components/main/MainArtistEvents.vue'
 
     export default {
         data(){
@@ -20,6 +21,7 @@
             MainArtistNewsletter,
             MainArtistCourses,
             MainArtistBlog,
+            MainArtistEvents,
         }
     }
 </script>
@@ -40,6 +42,8 @@
         <MainArtistCourses></MainArtistCourses>
 
         <MainArtistBlog></MainArtistBlog>
+
+        <MainArtistEvents></MainArtistEvents>
 
         <MainArtistNewsletter></MainArtistNewsletter>
     </main>
