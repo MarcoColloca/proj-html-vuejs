@@ -4,6 +4,7 @@
     import MainArtistVideo from './single-components/main/MainArtistVideo.vue'
     import MainArtistTestimonials from './single-components/main/MainArtistTestimonials.vue'
     import MainArtistNewsletter from './single-components/main/MainArtistNewsletter.vue'
+    import MainArtistCourses from './single-components/main/MainArtistCourses.vue'
 
     export default {
         data(){
@@ -16,6 +17,7 @@
             MainArtistVideo,
             MainArtistTestimonials,
             MainArtistNewsletter,
+            MainArtistCourses,
         }
     }
 </script>
@@ -32,6 +34,8 @@
         <MainArtistVideo></MainArtistVideo>
 
         <MainArtistTestimonials></MainArtistTestimonials>
+
+        <MainArtistCourses></MainArtistCourses>
 
         <MainArtistNewsletter></MainArtistNewsletter>
     </main>
