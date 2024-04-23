@@ -2,6 +2,7 @@
     import MainArtistHero from './single-components/main/MainArtistHero.vue'
     import MainArtistBox from './single-components/main/MainArtistBox.vue'
     import MainArtistVideo from './single-components/main/MainArtistVideo.vue'
+    import MainArtistTestimonials from './single-components/main/MainArtistTestimonials.vue'
 
     export default {
         data(){
@@ -12,6 +13,7 @@
             MainArtistHero,
             MainArtistBox,
             MainArtistVideo,
+            MainArtistTestimonials,
         }
     }
 </script>
@@ -26,6 +28,8 @@
         <MainArtistBox></MainArtistBox>
 
         <MainArtistVideo></MainArtistVideo>
+
+        <MainArtistTestimonials></MainArtistTestimonials>
     </main>
 </template>
 
