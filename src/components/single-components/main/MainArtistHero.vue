@@ -125,13 +125,15 @@
             .hero__box--left-img-5{
                 z-index: 5;
                 left: 385px;
-                bottom: 267px;;
+                bottom: 267px;
+                box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.2);
             }
     
             .hero__box--left-img-6{
                 z-index: 6;
                 left: 198px;
                 bottom: 45px;
+                box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.2);
 
             }
         }
