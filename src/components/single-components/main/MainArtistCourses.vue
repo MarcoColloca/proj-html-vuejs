@@ -5,13 +5,154 @@
         components:{
             MainTitle,
         },
+        
+
+
+
+
 
         data(){
             return{
                 titleBox: {
                     sign: 'Artist coaching',
                     title: 'Latest Online Courses',
-                }
+                },
+
+                artistCards:[
+                    {
+                        img: '/imgs/artist-course-01-480x480.jpg',
+                        price: 18,
+                        title: 'The Acrylic Painting Academy',
+                        details: [
+                            {
+                                icon: ['far', 'file-lines'],
+                                text: '4 Lessons'
+                            },
+                            {
+                                icon: ['far', 'user'],
+                                text: '50 Students'
+                            }
+                        ],
+                    },
+                    {
+                        img: '/imgs/artist-course-02-480x480.jpg',
+                        price: 21,
+                        title: 'Drawing and Shading: Complete Course',
+                        details: [
+                            {
+                                icon: ['far', 'file-lines'],
+                                text: '14 Lessons'
+                            },
+                            {
+                                icon: ['far', 'user'],
+                                text: '50 Students'
+                            }
+                        ],
+                    },
+                    {
+                        img: '/imgs/artist-course-03-480x480.jpg',
+                        price: 19,
+                        title: 'The Color Theory for DIgital Artist',
+                        details: [
+                            {
+                                icon: ['far', 'file-lines'],
+                                text: '7 Lessons'
+                            },
+                            {
+                                icon: ['far', 'user'],
+                                text: '50 Students'
+                            }
+                        ],
+                    },
+                    {
+                        img: '/imgs/artist-course-04-480x480.jpg',
+                        price: 19,
+                        title: 'Portait Drawing The Smart Way',
+                        details: [
+                            {
+                                icon: ['far', 'file-lines'],
+                                text: '2 Lessons'
+                            },
+                            {
+                                icon: ['far', 'user'],
+                                text: '50 Students'
+                            }
+                        ],
+                    },
+                    {
+                        img: '/imgs/artist-course-05-480x480.jpg',
+                        price: 35,
+                        title: 'Ultimate Guide to Digital Sketching for Beginner',
+                        details: [
+                            {
+                                icon: ['far', 'file-lines'],
+                                text: '14 Lessons'
+                            },
+                            {
+                                icon: ['far', 'user'],
+                                text: '50 Students'
+                            }
+                        ],
+                    },
+                    {
+                        img: '/imgs/artist-course-06-480x480.jpg',
+                        price: 19,
+                        title: 'Mastering Watercolor Painting from Beginner',
+                        details: [
+                            {
+                                icon: ['far', 'file-lines'],
+                                text: '9 Lessons'
+                            },
+                            {
+                                icon: ['far', 'user'],
+                                text: '50 Students'
+                            }
+                        ],
+                    },
+                    {
+                        img: '/imgs/artist-course-07-480x480.jpg',
+                        price: 25,
+                        title: 'The Art & Science of Drawing',
+                        details: [
+                            {
+                                icon: ['far', 'file-lines'],
+                                text: '4 Lessons'
+                            },
+                            {
+                                icon: ['far', 'user'],
+                                text: '50 Students'
+                            }
+                        ],
+                    },
+                    {
+                        img: '/imgs/artist-course-08-480x480.jpg',
+                        price: 22,
+                        title: 'The Colored Pencil Drawing Course',
+                        details: [
+                            {
+                                icon: ['far', 'file-lines'],
+                                text: '6 Lessons'
+                            },
+                            {
+                                icon: ['far', 'user'],
+                                text: '50 Students'
+                            }
+                        ],
+                    },
+                ]
+            }
+        },
+
+
+
+
+        methods:{
+            /** Funzione che prende un parametro in entrata e ritorna un numero "arrotondato" alla seconda cifra decimale */
+            formatPrice(price){
+
+                const newnumber = '$ ' + parseFloat(price).toFixed(2)
+               
+                return newnumber
             }
         }
     }
@@ -33,222 +174,31 @@
         <div class="main__artist--courses__cards">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
-                        <!-- 1° Card Courses -->
+                    <div class="col-3" v-for="card in artistCards">                        
                         <div class="main__artist--courses__card">
                             <div class="main__artist--courses__card--header">
-                                <img src="/imgs/artist-course-01-480x480.jpg" alt="">
+                                <img :src="card.img" alt="">
                             </div>
 
                             <div class="main__artist--courses__card--body">
                                 <div class="card--body__price">
                                     <p>
-                                        $18.00 
+                                        {{formatPrice(card.price)}}
                                     </p>
                                 </div>
                                 <div class="card--body__title">
                                     <h3>
-                                        The Acrylic Painting Academy
+                                        {{ card.title }}
                                     </h3>
                                 </div>
                                 <div class="card--body__details">
                                     <p>
-                                        <span><font-awesome-icon :icon="['far', 'file-lines']" /> 4 Lessons </span> <span><font-awesome-icon :icon="['far', 'user']" /> 50 Students</span> 
+                                        <span v-for="detail in card.details"><font-awesome-icon :icon="detail.icon" /> {{detail.text}} </span> 
                                     </p>
                                 </div>
                             </div>
                         </div>                        
                     </div>
-                    
-                    <!-- 2° Card Courses -->
-                    <div class="col-3">
-                        <div class="main__artist--courses__card">
-                            <div class="main__artist--courses__card--header">
-                                <img src="/imgs/artist-course-02-480x480.jpg" alt="">
-                            </div>
-
-                            <div class="main__artist--courses__card--body">
-                                <div class="card--body__price">
-                                    <p>
-                                        $21.00 
-                                    </p>
-                                </div>
-                                <div class="card--body__title">
-                                    <h3>
-                                        Drawing and Shading: Complete Course
-                                    </h3>
-                                </div>
-                                <div class="card--body__details">
-                                    <p>
-                                        <span><font-awesome-icon :icon="['far', 'file-lines']" /> 14 Lessons </span> <span><font-awesome-icon :icon="['far', 'user']" /> 50 Students</span> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 3° Card Courses -->
-                    <div class="col-3">
-                        <div class="main__artist--courses__card">
-                            <div class="main__artist--courses__card--header">
-                                <img src="/imgs/artist-course-03-480x480.jpg" alt="">
-                            </div>
-
-                            <div class="main__artist--courses__card--body">
-                                <div class="card--body__price">
-                                    <p>
-                                        $19.00 
-                                    </p>
-                                </div>
-                                <div class="card--body__title">
-                                    <h3>
-                                        The Color Theory for DIgital Artist
-                                    </h3>
-                                </div>
-                                <div class="card--body__details">
-                                    <p>
-                                        <span><font-awesome-icon :icon="['far', 'file-lines']" /> 7 Lessons </span> <span><font-awesome-icon :icon="['far', 'user']" /> 50 Students</span> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 4° Card Courses -->
-                    <div class="col-3">
-                        <div class="main__artist--courses__card">
-                            <div class="main__artist--courses__card--header">
-                                <img src="/imgs/artist-course-04-480x480.jpg" alt="">
-                            </div>
-
-                            <div class="main__artist--courses__card--body">
-                                <div class="card--body__price">
-                                    <p>
-                                        $19.00 
-                                    </p>
-                                </div>
-                                <div class="card--body__title">
-                                    <h3>
-                                        Portait Drawing The Smart Way
-                                    </h3>
-                                </div>
-                                <div class="card--body__details">
-                                    <p>
-                                        <span><font-awesome-icon :icon="['far', 'file-lines']" /> 2 Lessons </span> <span><font-awesome-icon :icon="['far', 'user']" /> 50 Students</span> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 5° Card Courses -->
-                    <div class="col-3">
-                        <div class="main__artist--courses__card">
-                            <div class="main__artist--courses__card--header">
-                                <img src="/imgs/artist-course-05-480x480.jpg" alt="">
-                            </div>
-
-                            <div class="main__artist--courses__card--body">
-                                <div class="card--body__price">
-                                    <p>
-                                        $35.00 
-                                    </p>
-                                </div>
-                                <div class="card--body__title">
-                                    <h3>
-                                        Ultimate Guide to Digital Sketching for Beginner
-                                    </h3>
-                                </div>
-                                <div class="card--body__details">
-                                    <p>
-                                        <span><font-awesome-icon :icon="['far', 'file-lines']" /> 14 Lessons </span> <span><font-awesome-icon :icon="['far', 'user']" /> 50 Students</span> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 6° Card Courses -->
-                    <div class="col-3">
-                        <div class="main__artist--courses__card">
-                            <div class="main__artist--courses__card--header">
-                                <img src="/imgs/artist-course-06-480x480.jpg" alt="">
-                            </div>
-
-                            <div class="main__artist--courses__card--body">
-                                <div class="card--body__price">
-                                    <p>
-                                        $19.00 
-                                    </p>
-                                </div>
-                                <div class="card--body__title">
-                                    <h3>
-                                        Mastering Watercolor Painting from Beginner
-                                    </h3>
-                                </div>
-                                <div class="card--body__details">
-                                    <p>
-                                        <span><font-awesome-icon :icon="['far', 'file-lines']" /> 9 Lessons </span> <span><font-awesome-icon :icon="['far', 'user']" /> 50 Students</span> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 7° Card Courses -->
-                    <div class="col-3">
-                        <div class="main__artist--courses__card">
-                            <div class="main__artist--courses__card--header">
-                                <img src="/imgs/artist-course-07-480x480.jpg" alt="">
-                            </div>
-
-                            <div class="main__artist--courses__card--body">
-                                <div class="card--body__price">
-                                    <p>
-                                        $25.00 
-                                    </p>
-                                </div>
-                                <div class="card--body__title">
-                                    <h3>
-                                        The Art & Science of Drawing
-                                    </h3>
-                                </div>
-                                <div class="card--body__details">
-                                    <p>
-                                        <span><font-awesome-icon :icon="['far', 'file-lines']" /> 4 Lessons </span> <span><font-awesome-icon :icon="['far', 'user']" /> 50 Students</span> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 8° Card Courses -->
-                    <div class="col-3">
-                        <div class="main__artist--courses__card">
-                            <div class="main__artist--courses__card--header">
-                                <img src="/imgs/artist-course-08-480x480.jpg" alt="">
-                            </div>
-
-                            <div class="main__artist--courses__card--body">
-                                <div class="card--body__price">
-                                    <p>
-                                        $22.00 
-                                    </p>
-                                </div>
-                                <div class="card--body__title">
-                                    <h3>
-                                        The Colored Pencil Drawing Course
-                                    </h3>
-                                </div>
-                                <div class="card--body__details">
-                                    <p>
-                                        <span><font-awesome-icon :icon="['far', 'file-lines']" /> 6 Lessons </span> <span><font-awesome-icon :icon="['far', 'user']" /> 50 Students</span> 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
                 </div>
             </div>
         </div>
