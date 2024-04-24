@@ -8,6 +8,7 @@
 <template>
     <!-- Artist Courses Section -->
     <section class="main__artist--courses">
+        <div id="Courses"></div>
         <!-- Artist Courses Title -->
         <div class="main__artist--courses__title">
             <p class="artist-sign">

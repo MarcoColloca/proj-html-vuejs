@@ -28,11 +28,11 @@
                     },
                     {
                         name: 'Courses',
-                        href: '#'
+                        href: '#Courses'
                     },
                     {
                         name: 'Blog',
-                        href: '#'
+                        href: '#Blog'
                     },
                     {
                         name: 'Shop',

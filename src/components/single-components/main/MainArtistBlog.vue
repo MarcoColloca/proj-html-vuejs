@@ -10,6 +10,7 @@
 <template> 
     <!-- Artist Blog Section -->
     <section class="main__artist--blog">
+        <div id="Blog"></div>
         <div class="main__artist--blog__title">
             <p class="artist-sign">Articles and Tips</p>
             <h1>Latest From the Blog</h1>
