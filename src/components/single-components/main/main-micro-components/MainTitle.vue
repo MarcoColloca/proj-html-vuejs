@@ -27,7 +27,7 @@
 
     .main-title{
         text-align: center;
-        margin-top: 20px;
+        margin-top: 5px;
         margin-bottom: 35px
     }
 
