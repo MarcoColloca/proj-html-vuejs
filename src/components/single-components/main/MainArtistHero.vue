@@ -1,6 +1,19 @@
 <script>
+    import MainTitle from './main-micro-components/MainTitle.vue'
+
     export default {
-        
+        components:{
+            MainTitle,
+        },
+
+        data(){
+            return{
+                titleBox: {
+                    sign: 'Hello, I\'m Matin',
+                    title: 'Artist Coaching And Mentoring Might Be for You',
+                }
+            }
+        }
     }
 </script>
 
@@ -22,8 +35,9 @@
     
             <div class="col-4">
                 <div class="main__hero__title">
-                    <p class="artist-sign">Hello, Im Matin</p>
-                    <h1>Artist Coaching And Mentoring Might Be for You</h1>
+                    <MainTitle
+                     :titleBox="titleBox"
+                    ></MainTitle>
                     <button>Get started today</button>
                 </div>
             </div>
@@ -49,6 +63,7 @@
     @use '../../../assets/style/partials/mixins.scss' as *;
 
 
+
     .main__hero{
         overflow: hidden;
         background-color:  #FAF4EE;
@@ -68,13 +83,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
-            h1{
-                max-width: 500px;
-                text-align: center;
-                margin-top: 20px;
-                margin-bottom: 35px
-            }
+            font-size: 23px;
 
             button{
                 @include btn-artist;
@@ -103,39 +112,34 @@
             }
 
             .hero__box--left-img-2{
-                z-index: 2;
-                //left: -50px;
+                z-index: 2;                
                 right: 191px;
                 bottom: 15px;
                 width: 560px;
             }
     
             .hero__box--left-img-3{
-                z-index: 3;
-                //left: 550px;
+                z-index: 3;                
                 right: -85px;
                 bottom: 30px;
             }
     
             .hero__box--left-img-4{
-                z-index: 4;
-                //left: 41px;
+                z-index: 4;                
                 right: 262px;
                 bottom: 62px;
                 width: 350px;
             }
     
             .hero__box--left-img-5{
-                z-index: 5;
-                //left: 385px;
+                z-index: 5;                
                 right: 0;
                 bottom: 267px;
                 box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.2);
             }
     
             .hero__box--left-img-6{
-                z-index: 6;
-                //left: 198px;
+                z-index: 6;                
                 right: 275px;
                 bottom: 45px;
                 box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.2);
@@ -146,37 +150,32 @@
         .main__hero__box--right{
             .hero__box--right-img-1{
                 z-index: 1;
-                bottom: 27px;
-                //right: 151px;
+                bottom: 27px;                
                 left: -322px;
             }
 
             .hero__box--right-img-2{
                 z-index: 2;
-                bottom: 0;
-                //right: 120px;
+                bottom: 0;                
                 left: 120px;
                 width: 365px;
             }
 
             .hero__box--right-img-3{
                 z-index: 3;
-                bottom: 343px;
-                //right: 155px;
+                bottom: 343px;                
                 left: 281px;
             }
 
             .hero__box--right-img-4{
                 z-index: 4;
-                bottom: 35px;
-                //right: 410px;
+                bottom: 35px;                
                 left: 30px;
             }
 
             .hero__box--right-img-5{
                 z-index: 5;
-                bottom: 83px;
-                //right: 454px;
+                bottom: 83px;                
                 left: -44px;
                 width: 150px;
                 filter: invert(0%) sepia(0%) saturate(2989%) hue-rotate(210deg) brightness(113%) contrast(102%);
@@ -184,8 +183,7 @@
 
             .hero__box--right-img-6{
                 z-index: 6;
-                bottom: 52px;
-                //right: 237px;
+                bottom: 52px;                
                 left: 0;
             }
 
