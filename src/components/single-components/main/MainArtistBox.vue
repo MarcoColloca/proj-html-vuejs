@@ -11,8 +11,43 @@
                 titleBox: {
                     sign: 'Artist coaching',
                     title: 'I understand what it takes to create. I can help you with',
+                },
+
+                titleCards: [
+                    {
+                        img: '/imgs/artist-box-image-01.png',
+                        title:'Online Courses',
+                        details:'Online art coaching now offers you a very powerful way to redesign your artist mind.',
+                    },     
+                    {
+                        img: '/imgs/artist-box-image-02.png',
+                        title:'One to One',
+                        details:'Getting the necessary clarity about the current state to help you improve your ability.',
+                    },                    
+                    {
+                        img: '/imgs/artist-box-image-03.png',
+                        title:'Anywhere',
+                        details:'Access to valuable and portable program wich allow you to setup and live anywhere you want.',
+                    },                    
+                    {
+                        img: '/imgs/artist-box-image-04.png',
+                        title:'On Time',
+                        details:'Punctuality is our top priority because it\'s an essential criteria to assess a program quality.',
+                    },                    
+                ],
+            }
+        },
+
+
+        methods:{
+            /** Funzione che aggiunge del margine top pari a 4rem agli elementi il cui parametro passato è dispari 
+                (nel caso di un ciclo for risulteranno spostati gli elementi in posizione pari (in quanto hanno indice dispari)) */
+            addMarginTop(index){
+                if((index + 1) % 2 === 0){
+                    return 'mt-4'
                 }
             }
+
         }
     }
 </script>
@@ -33,74 +68,21 @@
         <div class="main__artist--box__cards">
             <div class="container-sm">
                 <div class="row">
-                    <div class="col-3">
-                        <!-- 1° Card dell'Artist Box Cards -->
-                        <div class="main__artist--box__card">
+                    <div class="col-3" v-for="(card, i) in titleCards">                        
+                        <div class="main__artist--box__card" :class="addMarginTop(i)">
                             <div class="main__artist--box__card__header">
-                                <img src="/imgs/artist-box-image-01.png" alt="">
+                                <img :src="card.img" alt="">
                             </div>
                             <div class="main__artist--box__card__body">
                                 <h2 class="main__artist--box__card__body__title">
-                                    Online Courses
+                                    {{ card.title }}
                                 </h2>
                                 <p class="main__artist--box__card__body__description">
-                                    Online art coaching now offers you a very powerful way to redesign your artist mind.
+                                    {{ card.details }}
                                 </p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-3">
-                        <!-- 2° Card dell'Artist Box Cards -->
-                        <div class="main__artist--box__card mt-4">
-                            <div class="main__artist--box__card__header">
-                                <img src="/imgs/artist-box-image-02.png" alt="">
-                            </div>
-                            <div class="main__artist--box__card__body">
-                                <h2 class="main__artist--box__card__body__title">
-                                    One to One
-                                </h2>
-                                <p class="main__artist--box__card__body__description">
-                                    Getting the necessary clarity about the current state to help you improve your ability.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-3">
-                        <!-- 3° Card dell'Artist Box Cards -->
-                        <div class="main__artist--box__card">
-                            <div class="main__artist--box__card__header">
-                                <img src="/imgs/artist-box-image-03.png" alt="">
-                            </div>
-                            <div class="main__artist--box__card__body">
-                                <h2 class="main__artist--box__card__body__title">
-                                    Anywhere
-                                </h2>
-                                <p class="main__artist--box__card__body__description">
-                                    Access to valuable and portable program wich allow you to setup and live anywhere you want.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-3">
-                        <!-- 4° Card dell'Artist Box Cards -->
-                        <div class="main__artist--box__card mt-4">
-                            <div class="main__artist--box__card__header">
-                                <img src="/imgs/artist-box-image-04.png" alt="">
-                            </div>
-                            <div class="main__artist--box__card__body">
-                                <h2 class="main__artist--box__card__body__title">
-                                    On Time
-                                </h2>
-                                <p class="main__artist--box__card__body__description">
-                                    Punctuality is our top priority because it's an essential criteria to assess a program quality.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    
+                    </div>    
                 </div>
             </div>
         </div>
