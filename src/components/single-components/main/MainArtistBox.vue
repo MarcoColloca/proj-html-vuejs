@@ -1,9 +1,11 @@
 <script>
     import MainTitle from './main-micro-components/MainTitle.vue'
+    import MainButton from './main-micro-components/MainButton.vue'
 
     export default {
         components:{
             MainTitle,
+            MainButton,
         },
 
         data(){
@@ -35,6 +37,11 @@
                         details:'Punctuality is our top priority because it\'s an essential criteria to assess a program quality.',
                     },                    
                 ],
+
+                mainButton:{
+                    style: 'btn-artist-light',
+                    text: 'Get Started Today'
+                },
             }
         },
 
@@ -115,7 +122,9 @@
                                 As an artist and an educator for nearly 30 years, I understand what ittakes to create.
                             </p>
 
-                            <button>Get Started Today</button>
+                            <MainButton
+                             :mainButton="mainButton"  
+                            ></MainButton>
                         </div>
                     </div>
                 </div>
@@ -235,11 +244,6 @@
                 &:last-of-type{
                     margin: 30px 0;
                 }
-            }
-
-            button{
-                @include btn-artist-light;
-                padding: 15px 35px;
             }
         }
     }

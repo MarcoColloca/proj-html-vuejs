@@ -52,8 +52,17 @@
         }
         
         button{
-            @include btn-artist;
+            border-radius: 8px;
+            background-color: $app-orange;
+            color: $app-white;
+            font-weight: bold;
+            border: none;
             padding: 8px 40px;
+            cursor: pointer;
+            &:hover{
+                background-color: $app-lightblue;
+                color: $app-white;    
+            }
         }
     }
 

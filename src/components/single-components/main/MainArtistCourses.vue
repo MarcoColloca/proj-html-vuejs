@@ -1,9 +1,11 @@
 <script>
     import MainTitle from './main-micro-components/MainTitle.vue'
+    import MainButton from './main-micro-components/MainButton.vue'
 
     export default {
         components:{
             MainTitle,
+            MainButton,
         },
         
 
@@ -139,7 +141,13 @@
                             }
                         ],
                     },
-                ]
+                ],
+
+                mainButton:{
+                    style: 'btn-artist-light',
+                    text: 'View All Courses',
+                    icon: ['fas', 'arrow-right-long']
+                },
             }
         },
 
@@ -205,7 +213,9 @@
 
         <!-- Artist Courses Button -->
         <div class="main__artist--courses__button">
-            <button>View All Courses <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></button>
+            <MainButton
+             :mainButton="mainButton"  
+            ></MainButton>            
         </div>
 
         <!-- Artist Courses Background imgs and Title -->
@@ -310,9 +320,5 @@
         display: flex;
         justify-content: center;
         padding: 30px 0;
-        button{
-            @include btn-artist-light;
-            padding: 15px 25px;
-        }
     }    
 </style>

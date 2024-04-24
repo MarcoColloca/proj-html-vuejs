@@ -1,9 +1,11 @@
 <script>
     import MainTitle from './main-micro-components/MainTitle.vue'
+    import MainButton from './main-micro-components/MainButton.vue'
 
     export default {
         components:{
             MainTitle,
+            MainButton,
         },
 
         data(){
@@ -11,7 +13,12 @@
                 titleBox: {
                     sign: 'Hello, I\'m Matin',
                     title: 'Artist Coaching And Mentoring Might Be for You',
-                }
+                },
+
+                mainButton:{
+                    style: 'btn-artist-light',
+                    text: 'Get Started Today'
+                },
             }
         }
     }
@@ -38,7 +45,9 @@
                     <MainTitle
                      :titleBox="titleBox"
                     ></MainTitle>
-                    <button>Get started today</button>
+                    <MainButton
+                     :mainButton="mainButton"  
+                    ></MainButton>
                 </div>
             </div>
             
@@ -84,11 +93,6 @@
             align-items: center;
             justify-content: center;
             font-size: 23px;
-
-            button{
-                @include btn-artist;
-                padding: 20px 35px;
-            }
         }
 
 
