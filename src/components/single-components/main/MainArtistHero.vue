@@ -98,40 +98,45 @@
 
             .hero__box--left-img-1{
                 z-index: 1;
-                left: 0;
+                right: auto;
                 bottom: auto;               
             }
 
             .hero__box--left-img-2{
                 z-index: 2;
-                left: -50px;
+                //left: -50px;
+                right: 191px;
                 bottom: 15px;
                 width: 560px;
             }
     
             .hero__box--left-img-3{
                 z-index: 3;
-                left: 550px;
+                //left: 550px;
+                right: -85px;
                 bottom: 30px;
             }
     
             .hero__box--left-img-4{
                 z-index: 4;
-                left: 41px;
-                bottom: 100px;
+                //left: 41px;
+                right: 262px;
+                bottom: 62px;
                 width: 350px;
             }
     
             .hero__box--left-img-5{
                 z-index: 5;
-                left: 385px;
+                //left: 385px;
+                right: 0;
                 bottom: 267px;
                 box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.2);
             }
     
             .hero__box--left-img-6{
                 z-index: 6;
-                left: 198px;
+                //left: 198px;
+                right: 275px;
                 bottom: 45px;
                 box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.2);
 
@@ -141,33 +146,38 @@
         .main__hero__box--right{
             .hero__box--right-img-1{
                 z-index: 1;
-                bottom: 60px;
-                right: 151px;
+                bottom: 27px;
+                //right: 151px;
+                left: -322px;
             }
 
             .hero__box--right-img-2{
                 z-index: 2;
                 bottom: 0;
-                right: 120px;
+                //right: 120px;
+                left: 120px;
                 width: 365px;
             }
 
             .hero__box--right-img-3{
                 z-index: 3;
                 bottom: 343px;
-                right: 155px;
+                //right: 155px;
+                left: 281px;
             }
 
             .hero__box--right-img-4{
                 z-index: 4;
                 bottom: 35px;
-                right: 410px;
+                //right: 410px;
+                left: 30px;
             }
 
             .hero__box--right-img-5{
                 z-index: 5;
-                bottom: 60px;
-                right: 454px;
+                bottom: 83px;
+                //right: 454px;
+                left: -44px;
                 width: 150px;
                 filter: invert(0%) sepia(0%) saturate(2989%) hue-rotate(210deg) brightness(113%) contrast(102%);
             }
@@ -175,7 +185,8 @@
             .hero__box--right-img-6{
                 z-index: 6;
                 bottom: 52px;
-                right: 237px;
+                //right: 237px;
+                left: 0;
             }
 
         }
