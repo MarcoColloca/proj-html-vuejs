@@ -121,6 +121,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- Artist Box Background Images-->
+        <!-- Il numero nelle classi delle immagini, indica lo z-index, quindi la loro posizione seguendo l'asse z. -->
+        <img class="artist--box_img-1" src="/imgs/artist-shape-00.png" alt="">
+        <img class="artist--box_img-2" src="/imgs/artist-shape-01.png" alt="">
+        <img class="artist--box_img-3" src="/imgs/maxcoach-shape-13.png" alt="">
+        <img class="artist--box_img-4" src="/imgs/maxcoach-shape-14-1536x343.png" alt="">
     </section>
 </template>
 
@@ -129,6 +136,45 @@
 <style lang="scss" scoped>
     @use '../../../assets/style/partials/variables.scss' as *;
     @use '../../../assets/style/partials/mixins.scss' as *;
+
+
+    .main__artist--box{
+        position: relative;
+
+        .artist--box_img-1{
+            position: absolute;
+            z-index: -4;
+            top: 300px;
+            right: 450px;
+            opacity: 0.1;
+            filter: invert(1) opacity(0.3);
+        }
+
+        .artist--box_img-2{
+            position: absolute;
+            z-index: -3;
+            top: 54px;
+            left: -201px;
+            transform: rotate(225deg);        
+        }
+
+        .artist--box_img-3{
+            position: absolute;
+            z-index: -2;
+            top: 300px;
+            right: -30px;
+        }
+
+        .artist--box_img-4{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            top: 100px;
+            left: 0;
+        }
+
+
+    }
 
     .main__artist--box__title{
         padding-top: 70px;
