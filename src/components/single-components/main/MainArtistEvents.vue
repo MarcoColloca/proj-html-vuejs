@@ -129,15 +129,29 @@
                 </div>
             </div>
         </div>
+
+        <!-- Backgorund imgs and title -->
+        <span class="side-title-left"> Events </span>
     </section>
 </template>
 
 
 
 <style lang="scss" scoped>
-    
+    @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
     .main__artist--events{
         padding: 60px 0;
+        position: relative;
+        .side-title-left{
+            font-family: "Londrina Outline", sans-serif;
+            position: absolute;
+            left: -151px;
+            bottom: 263px;
+            color: #F5ECE4;
+            transform: rotate(90deg);
+            font-size: 200px;            
+        }
 
         .main__artist--events__cards{
             padding: 30px 0;
@@ -169,5 +183,8 @@
                 }
             }
         }
+
+        
+
     }
 </style>

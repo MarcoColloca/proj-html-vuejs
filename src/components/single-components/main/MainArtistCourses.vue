@@ -208,9 +208,12 @@
             <button>View All Courses <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></button>
         </div>
 
+        <!-- Artist Background imgs and Title -->
         <img class="artist--courses__img-left" src="/imgs/artist-shape-01.png" alt="">
 
         <img class="artist--courses__img-right" src="/imgs/artist-shape-01.png" alt="">
+
+        <span class="side-title-right">Courses</span>
     </section>
 </template>
 
@@ -242,6 +245,17 @@
             z-index: -1;
             filter: invert(1);
         }
+        
+        .side-title-right{
+            font-family: "Londrina Outline", sans-serif;
+            position: absolute;
+            right: -190px;
+            top: 465px;
+            color: #F5ECE4;
+            transform: rotate(90deg);
+            font-size: 200px;            
+
+        }        
     }
 
 
