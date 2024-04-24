@@ -1,7 +1,21 @@
 <script>
-    export default {
-        
+    import MainTitle from './main-micro-components/MainTitle.vue'
+
+
+export default {
+    components:{
+        MainTitle,
+    },
+
+    data(){
+        return{
+            titleBox: {
+                sign: 'Articles and Tips',
+                title: 'Latest From the Blog',
+            }
+        }
     }
+}
 </script>
 
 
@@ -12,8 +26,9 @@
     <section class="main__artist--blog">
         <div id="Blog"></div>
         <div class="main__artist--blog__title">
-            <p class="artist-sign">Articles and Tips</p>
-            <h1>Latest From the Blog</h1>
+            <MainTitle
+             :titleBox="titleBox"
+            ></MainTitle>
         </div>
         
         <!-- Blog Cards -->
@@ -159,7 +174,6 @@
 
         .main__artist--blog__title{
             padding: 40px 0;
-            text-align: center;
         }
 
 

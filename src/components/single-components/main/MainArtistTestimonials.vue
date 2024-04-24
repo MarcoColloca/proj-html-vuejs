@@ -1,7 +1,20 @@
 <script>
+    import MainTitle from './main-micro-components/MainTitle.vue'
+
     export default {
-        
-    }
+        components:{
+            MainTitle,
+        },
+
+        data(){
+            return{
+                titleBox: {
+                    sign: 'Testimonials',
+                    title: 'Why do people love me?',
+                }
+            }
+        }
+    }      
 </script>
 
 
@@ -15,8 +28,9 @@
     <section class="main__artist--testimonials">
         <!-- Testimonials Title -->
         <div class="main__artist--testimonials__title">
-            <p class="artist-sign">Testimonials</p>
-            <h1>Why do people love me?</h1>
+            <MainTitle
+             :titleBox="titleBox"
+            ></MainTitle>
         </div>
 
         <!-- Testimonials Cards -->
@@ -165,10 +179,6 @@
         
         .main__artist--testimonials__title{
             padding-top: 100px;
-            text-align: center;
-            h1{
-                font-weight: 600;
-            }
         }
 
 

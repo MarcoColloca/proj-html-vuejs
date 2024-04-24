@@ -1,6 +1,19 @@
 <script>
+    import MainTitle from './main-micro-components/MainTitle.vue'
+
     export default {
-        
+        components:{
+            MainTitle,
+        },
+
+        data(){
+            return{
+                titleBox: {
+                    sign: 'Artist coaching',
+                    title: 'I understand what it takes to create. I can help you with',
+                }
+            }
+        }
     }
 </script>
 
@@ -11,8 +24,9 @@
     <section class="main__artist--box">
         <!-- Artist Box Title -->
         <div class="main__artist--box__title">
-            <p class="artist-sign">Artist Coaching</p>
-            <h1>I understand what it takes to create. I can help you with</h1>
+            <MainTitle
+             :titleBox="titleBox"
+            ></MainTitle>
         </div>
 
         <!-- Artist Box Cards -->
@@ -136,17 +150,7 @@
 
     .main__artist--box__title{
         padding-top: 70px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 5px;
-        
-        h1{
-            max-width: 565px;
-            font-weight: 600;
-            text-align: center;
-        }
-
+        font-size: 22px;
     }
 
     .main__artist--box__cards{

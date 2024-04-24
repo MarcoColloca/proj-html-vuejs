@@ -1,8 +1,18 @@
 <script>
+    import MainTitle from './main-micro-components/MainTitle.vue'
+
+
     export default {
+        components:{
+            MainTitle,
+        },
+
         data(){
             return{
-
+                titleBox: {
+                    sign: 'Upcoming Events',
+                    title: 'Let\'s Work Together',
+                }
             }
         }
     }
@@ -16,8 +26,9 @@
 
         <!-- Evets Title -->
         <div class="main__artist--events__title">
-            <p class="artist-sign">Upcoming Events</p>
-            <h1>Let's Work Together</h1>
+            <MainTitle
+             :titleBox="titleBox"
+            ></MainTitle>
         </div>
 
 
@@ -136,9 +147,6 @@
     
     .main__artist--events{
         padding: 60px 0;
-        .main__artist--events__title{
-            text-align: center;
-        }
 
         .main__artist--events__cards{
             padding: 30px 0;

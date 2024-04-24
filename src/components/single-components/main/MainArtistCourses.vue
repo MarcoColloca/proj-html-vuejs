@@ -1,6 +1,19 @@
 <script>
+    import MainTitle from './main-micro-components/MainTitle.vue'
+
     export default {
-        
+        components:{
+            MainTitle,
+        },
+
+        data(){
+            return{
+                titleBox: {
+                    sign: 'Artist coaching',
+                    title: 'Latest Online Courses',
+                }
+            }
+        }
     }
 </script>
 
@@ -11,13 +24,9 @@
         <div id="Courses"></div>
         <!-- Artist Courses Title -->
         <div class="main__artist--courses__title">
-            <p class="artist-sign">
-                Artist coaching
-            </p>
-
-            <h1>
-                Latest Online Courses
-            </h1>
+            <MainTitle
+             :titleBox="titleBox"
+            ></MainTitle>            
         </div>
 
         <!-- Artist Courses Cards -->
@@ -265,7 +274,6 @@
         position: relative;
         padding: 50px 0;
         .main__artist--courses__title{
-            text-align: center;
             margin-bottom: 30px;
         }
 

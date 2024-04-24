@@ -34,11 +34,16 @@
         gap: 5px;
     }
 
+    .main-sign{
+        font-size: 41px;
+    }
+
     .main-title{
         text-align: center;
         margin-top: 5px;
         margin-bottom: 35px;        
-        max-width: 620px;   
+        max-width: 620px;
+        font-weight: 500;
     }
 
 </style>
