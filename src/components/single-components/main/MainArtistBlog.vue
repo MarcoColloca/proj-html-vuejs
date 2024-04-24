@@ -242,7 +242,7 @@ export default {
                     .hero-card--footer__title{
                         font-size: 22px;
                         margin: 10px 0;
-
+                        width: 400px;
                     }
 
                     .hero-card--footer__details{
