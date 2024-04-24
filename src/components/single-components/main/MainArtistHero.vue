@@ -16,7 +16,7 @@
                 },
 
                 mainButton:{
-                    style: 'btn-artist-light',
+                    style: 'btn-artist',
                     text: 'Get Started Today'
                 },
             }
