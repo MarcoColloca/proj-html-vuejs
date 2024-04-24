@@ -208,7 +208,7 @@
             <button>View All Courses <font-awesome-icon :icon="['fas', 'arrow-right-long']" /></button>
         </div>
 
-        <!-- Artist Background imgs and Title -->
+        <!-- Artist Courses Background imgs and Title -->
         <img class="artist--courses__img-left" src="/imgs/artist-shape-01.png" alt="">
 
         <img class="artist--courses__img-right" src="/imgs/artist-shape-01.png" alt="">

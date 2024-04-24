@@ -130,8 +130,12 @@
             </div>
         </div>
 
-        <!-- Backgorund imgs and title -->
+        <!-- Artist Events Backgorund imgs and title -->
+        <!-- Il numero nelle classi delle immagini rappresenta la posizione sullo z-index, più è alto più saranno in superficie-->
         <span class="side-title-left"> Events </span>
+        <img class="artist--box_img-1" src="/imgs/maxcoach-shape-13.png" alt="">
+        <img class="artist--box_img-2" src="/imgs/artist-shape-00.png" alt="">
+        <img class="artist--box_img-3" src="/imgs/artist-shape-02.png" alt="">
     </section>
 </template>
 
@@ -143,15 +147,46 @@
     .main__artist--events{
         padding: 60px 0;
         position: relative;
+        overflow: hidden;
         .side-title-left{
             font-family: "Londrina Outline", sans-serif;
             position: absolute;
+            z-index: 1;
             left: -151px;
             bottom: 263px;
             color: #F5ECE4;
             transform: rotate(90deg);
             font-size: 200px;            
         }
+
+
+        .artist--box_img-1{
+            position: absolute;
+            z-index: -2;
+            top: 200px;
+            right: -5px;
+            filter: grayscale(100%);
+        }
+
+
+        .artist--box_img-2{
+            position: absolute;
+            z-index: -1;
+            top: 200px;
+            right: -65px;            
+            opacity: 0.1;
+            filter: invert(1) opacity(0.3);
+        }
+
+        .artist--box_img-3{
+            position: absolute;
+            z-index: -1;
+            bottom: 0px;
+            left: -485px;
+            transform: rotate(270deg);
+        }
+
+
 
         .main__artist--events__cards{
             padding: 30px 0;
