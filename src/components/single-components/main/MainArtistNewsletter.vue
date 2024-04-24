@@ -16,6 +16,7 @@
     <section class="main__artist--newsletter">
         <div class="container-sm">
             <div class="row">
+                
                 <!-- Newsletter Title -->
                 <div class="col-4">
                     <h1>
@@ -48,7 +49,6 @@
     .main__artist--newsletter{
         position: relative;
         overflow: hidden;
-        z-index: -2;
         padding: 50px 0;
         background-color: #244186;
         color: $app-white;
@@ -90,6 +90,8 @@
         .main__artist--newsletter__mailbox{
             display: flex;
             align-items: center;
+            position: relative;
+            z-index: 99;
             .main__artist--newsletter__mailbox__arrow-icon{
                 font-size: 26px;
                 margin-left: -32px;
@@ -106,13 +108,13 @@
         .artist--newsletter__img-left{
             left: 0;
             bottom: 0;
-            z-index: -1;
+            z-index: 1;
         }
 
         .artist--newsletter__img-right{
             right: 0;
             bottom: 0;
-            z-index: -1;
+            z-index: 1;
         }
     }
 </style>
