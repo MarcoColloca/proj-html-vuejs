@@ -235,6 +235,7 @@
             left: -250px;
             bottom: 75px;
             z-index: -2;
+            filter: invert(1);
         }
 
         .artist--courses__img-right{
@@ -243,7 +244,6 @@
             top: 126px;
             transform: rotate(248deg);
             z-index: -1;
-            filter: invert(1);
         }
         
         .side-title-right{
@@ -254,7 +254,6 @@
             color: #F5ECE4;
             transform: rotate(90deg);
             font-size: 200px;            
-
         }        
     }
 
