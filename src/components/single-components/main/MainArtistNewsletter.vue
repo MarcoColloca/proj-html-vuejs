@@ -48,6 +48,7 @@
     .main__artist--newsletter{
         position: relative;
         overflow: hidden;
+        z-index: -2;
         padding: 50px 0;
         background-color: #244186;
         color: $app-white;
@@ -105,11 +106,13 @@
         .artist--newsletter__img-left{
             left: 0;
             bottom: 0;
+            z-index: -1;
         }
 
         .artist--newsletter__img-right{
             right: 0;
             bottom: 0;
+            z-index: -1;
         }
     }
 </style>
